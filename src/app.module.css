@@ -1,0 +1,24 @@
+.main {
+  background-color: var(--WHITE);
+  margin: 1rem 0.625rem;
+  padding: 1.5rem;
+  height: 400px;
+  width: 300px;
+  border-radius: 5% 5% 25% 5%;
+}
+
+@media screen and (min-width: 500px) {
+  .main {
+    width: 400px;
+    height: 500px;
+    padding: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .main {
+    width: 800px;
+    height: 700px;
+    padding: 3rem;
+  }
+}

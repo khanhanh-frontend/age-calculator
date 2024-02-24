@@ -1,0 +1,50 @@
+.main {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 3rem;
+  line-height: 55px;
+
+  margin-top: 70px;
+}
+
+.date {
+  color: var(--P-PURPLE);
+  margin-right: 5px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.welcome {
+  font-size: 2rem;
+
+  font-weight: bold;
+  font-style: italic;
+}
+
+.name {
+  color: var(--P-PURPLE);
+}
+
+.date~span {
+  font-style: italic;
+}
+
+@media screen and (min-width: 500px) {
+  .main {
+    margin-top: 100px;
+    line-height: 75px;
+    font-size: 4rem;
+  }
+
+  .welcome {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .main {
+    line-height: 8rem;
+    font-size: 8rem;
+  }
+}

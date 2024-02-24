@@ -1,0 +1,62 @@
+.main {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.line {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: 0px;
+  margin-top: 80px;
+  width: 100%;
+}
+
+.main button {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--P-PURPLE);
+  border: none;
+}
+
+.main button:disabled {
+  background-color: grey;
+}
+
+.main img {
+  width: 50%;
+}
+
+.hide {
+  display: none;
+}
+
+.message {
+  margin-top: 1.5rem;
+  display: block;
+  font-size: 11px;
+  color: var(--P-LIGHT-RED);
+}
+
+@media screen and (min-width: 500px) {
+  .main button {
+    left: calc(100% - 20px);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .main button {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    left: calc(100% - 30px);
+  }
+}
